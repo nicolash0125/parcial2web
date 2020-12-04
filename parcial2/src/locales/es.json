@@ -4,5 +4,8 @@
     "Description":"Descripción",
     "Height":"Altura",
     "Weight":"Peso",
-    "Type":"Tipo"
+    "Type":"Type",
+    "TableTitle":"Lista Pokemon",
+    "GraphTitle":"Altura Pokemon"
+
 }

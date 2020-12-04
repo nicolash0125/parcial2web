@@ -1,18 +1,18 @@
 import React, { useEffect, useState, useRef } from "react";
 import * as d3 from "d3";
+import { FormattedMessage } from "react-intl";
 export default function Graph({ data: data }) {
 let canvasRef = useRef(null);
     
   useEffect(() => {
       
-    const width = 700;
+    const width = 800;
     const height = 500;
     const margin = { top: 10, left: 50, bottom: 40, right: 10 };
     const iwidth = width - margin.left - margin.right;
     const iheight = height - margin.top - margin.bottom;
     const canvas = d3.select(canvasRef.current);
     canvas.selectAll("*").remove();
-    console.log(data);
     const svg = canvas
       .append("svg")
       .attr("width", width)
@@ -48,6 +48,7 @@ let canvasRef = useRef(null);
 
   return (
     <main>
+        <h1><FormattedMessage id = "GraphTitle"/></h1>
       <div ref={canvasRef}></div>
     </main>
   );

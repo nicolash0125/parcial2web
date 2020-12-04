@@ -27,6 +27,7 @@ export default function TableList() {
 
   return (
     <main className="p-5">
+      <h1><FormattedMessage id = "TableTitle"/></h1>
       <Table responsive>
         <thead className="thead-dark">
           <tr>
